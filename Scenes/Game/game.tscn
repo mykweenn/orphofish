@@ -1,0 +1,60 @@
+[gd_scene load_steps=7 format=3 uid="uid://dmiyd5b22j5hs"]
+
+[ext_resource type="Texture2D" uid="uid://c2uu707gkq2pn" path="res://Assets/Орфорыба/фон/уровень 1/1 .png" id="1_jy26k"]
+[ext_resource type="Texture2D" uid="uid://e3bpw1qcpxou" path="res://Assets/Орфорыба/фон/уровень 1/2.png" id="2_ci3nw"]
+[ext_resource type="Texture2D" uid="uid://dgw0nqosa7u17" path="res://Assets/Орфорыба/фон/уровень 1/3.png" id="3_sqch7"]
+[ext_resource type="Texture2D" uid="uid://48x2vy83x0qd" path="res://Assets/Орфорыба/фон/уровень 1/4.png" id="4_11h53"]
+[ext_resource type="Texture2D" uid="uid://cri8gdqvhp6i4" path="res://Assets/Орфорыба/фон/уровень 1/5.png" id="5_7fg0l"]
+[ext_resource type="PackedScene" uid="uid://dnibnq76slum8" path="res://Scenes/Player/player.tscn" id="6_bxvka"]
+
+[node name="Game" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(-4, 0)
+motion_mirroring = Vector2(2038, 0)
+
+[node name="1" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(1023, 324.75)
+scale = Vector2(0.407813, 0.407813)
+texture = ExtResource("1_jy26k")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(-4, 0)
+motion_mirroring = Vector2(2038, 0)
+
+[node name="2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2(1023, 324.75)
+scale = Vector2(0.407813, 0.407813)
+texture = ExtResource("2_ci3nw")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(-4, 0)
+motion_mirroring = Vector2(2038, 0)
+
+[node name="3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+position = Vector2(1023, 324.75)
+scale = Vector2(0.407813, 0.407813)
+texture = ExtResource("3_sqch7")
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(-4, 0)
+motion_mirroring = Vector2(2038, 0)
+
+[node name="4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
+position = Vector2(1023, 324.75)
+scale = Vector2(0.407813, 0.407813)
+texture = ExtResource("4_11h53")
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(-4, 0)
+motion_mirroring = Vector2(2038, 0)
+
+[node name="5" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer5"]
+position = Vector2(1023, 324.75)
+scale = Vector2(0.407813, 0.407813)
+texture = ExtResource("5_7fg0l")
+
+[node name="Player" parent="." instance=ExtResource("6_bxvka")]
+position = Vector2(100, 306)
